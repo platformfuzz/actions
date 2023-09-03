@@ -116,5 +116,5 @@ jobs:
             -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" \
             -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" \
             --workdir /github/workspace \
-            ghcr.io/siderolabs/conform:v0.1.0-alpha.27 \
+            ghcr.io/siderolabs/conform:v0.1.0-alpha.27-3-g014bf85 \
             enforce --commit-ref="refs/remotes/origin/main" --reporter=github
