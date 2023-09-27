@@ -1,0 +1,8 @@
+name: auto-assign-issue
+on:
+  issues:
+    types: 
+      - opened
+jobs:
+  auto-assign:
+    uses: ./.github/workflows/auto-assign-issue.yml
