@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - id: lint
         env:
@@ -48,5 +48,5 @@ jobs:
           done
           CONFIG_FILE="$(mktemp)"
           cat <<< "$CONFIG" > "$CONFIG_FILE"
-          npm install -g markdownlint-cli@0.35.0
+          npm install -g markdownlint-cli@0.39.0
           markdownlint '**/*.md' $IGNORE -c "$CONFIG_FILE"
